@@ -9,8 +9,8 @@ interface ButtonProps {
 
 const Button = ({ className, text, color, size }: ButtonProps ) => {
     const colorVariants: Variant = {
-        "gray": "text-gray border-gray bg-transparent",
-        "gray-100": "text-gray border-gray bg-transparent base:text-violet-200 base:border-violet-200",
+        "gray": "text-gray border-gray bg-transparent hover:text-violet-200 hover:bg-gray",
+        "gray-100": "text-gray border-gray bg-transparent base:text-violet-200 base:border-violet-200 base:hover:text-gray base:hover:bg-violet-200",
     }
     const sizeVariants: Variant = {
         xs: "h-10 px-8 text-sl border",
@@ -24,6 +24,10 @@ const Button = ({ className, text, color, size }: ButtonProps ) => {
             {text}
         </button>
     )
+}
+
+Button.defaultProps = {
+    className: ""
 }
 
 export { Button }
