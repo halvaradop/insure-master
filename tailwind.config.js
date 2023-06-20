@@ -10,6 +10,9 @@ export default {
       height: {
         nav: 'calc(100vh - 5rem)'
       },
+      fontFamily: {
+        display: "'DM Serif Display', serif"
+      },
       colors: {
         blue: 'hsl(216, 30%, 68%)',
         gray: 'hsl(0, 0%, 98%)',

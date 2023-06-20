@@ -9,10 +9,12 @@ interface ButtonProps {
 
 const Button = ({ className, text, color, size }: ButtonProps ) => {
     const colorVariants: Variant = {
-        "blue-100": "text-blue-100 border-blue-100 bg-transparent"
+        "gray": "text-gray border-gray bg-transparent"
     }
     const sizeVariants: Variant = {
-        sm: "h-14 text-xl border"
+        xs: "h-10 px-8 text-sl border",
+        sm: "h-14 px-4 text-xl border",
+
     }
     const classList = `${sizeVariants[size] ?? ""} ${colorVariants[color] ?? ""} ${className}`
 
