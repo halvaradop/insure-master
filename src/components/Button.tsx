@@ -9,7 +9,8 @@ interface ButtonProps {
 
 const Button = ({ className, text, color, size }: ButtonProps ) => {
     const colorVariants: Variant = {
-        "gray": "text-gray border-gray bg-transparent"
+        "gray": "text-gray border-gray bg-transparent",
+        "gray-100": "text-gray border-gray bg-transparent base:text-violet-200 base:border-violet-200",
     }
     const sizeVariants: Variant = {
         xs: "h-10 px-8 text-sl border",

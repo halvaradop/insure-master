@@ -7,6 +7,9 @@ export default {
   },
   theme: {
     extend: {
+      screens: {
+        base: '900px'
+      },
       height: {
         nav: 'calc(100vh - 5rem)'
       },
