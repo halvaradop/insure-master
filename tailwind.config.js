@@ -7,6 +7,9 @@ export default {
   },
   theme: {
     extend: {
+      height: {
+        nav: 'calc(100vh - 5rem)'
+      },
       colors: {
         blue: 'hsl(216, 30%, 68%)',
         gray: 'hsl(0, 0%, 98%)',
