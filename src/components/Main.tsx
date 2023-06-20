@@ -39,7 +39,7 @@ const Main = () => {
             </section>
             <section className="w-11/12 mx-auto mt-16 py-20 px-4 text-center relative overflow-hidden bg-violet base:w-10/12 base:px-10 base:flex base:items-center base:justify-between base:text-start">
                 <h2 className="mb-8 text-gray text-4xl font-bold font-display tracking-wider relative z-10 base:w-3/5 base:m-0">Find out more about how we work</h2>
-                <Button className="uppercase" text="How we work" color="gray" size="xs" />
+                <Button className="uppercase relative z-20" text="How we work" color="gray" size="xs" />
                 <picture>
                     <source media="(min-width: 900px)" srcSet={bgPatternRight.bgRightDesktop} />
                     <img className="absolute bottom-0 right-0" src={bgPatternRight.bgRightMobile} alt="background pattern right" />

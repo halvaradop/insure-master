@@ -34,14 +34,14 @@ const Header = () => {
                     <img src={logo} alt="logo icon" />
                     <img className="hover:cursor-pointer base:hidden" src={menu} alt="menu icon" ref={menuIconRef} onClick={handleToggleMenu} />
                 </figure>
-                <menu className="w-full h-nav pt-16 px-4 hidden relative bg-violet-200 base:w-full base:h-auto base:p-0 base:block base:bg-transparent" ref={menuRef}>
+                <menu className="w-full h-nav pt-16 px-4 hidden absolute z-10 bg-violet-200 base:w-full base:h-auto base:p-0 base:block base:relative base:bg-transparent" ref={menuRef}>
                     <ul className="flex items-center flex-col gap-y-8 text-white text-xl font-bold uppercase base:flex-row base:justify-end base:gap-x-10 base:text-blue base:text-sm">
-                        <li>How we work</li>
-                        <li>Blog</li>
-                        <li>Account</li>
+                        <li className="hover:text-violet-200 hover:cursor-pointer">How we work</li>
+                        <li className="hover:text-violet-200 hover:cursor-pointer">Blog</li>
+                        <li className="hover:text-violet-200 hover:cursor-pointer">Account</li>
                         <Button className="w-full max-w-sm uppercase base:w-auto base:h-10" text="View plans" color="gray-100" size="sm"  />
                     </ul>
-                    <img className="absolute bottom-0 left-0 base:hidden" src={bgPattern} alt="background pattern" />
+                    <img className="w-full max-h-52 absolute bottom-0 left-0 base:hidden" src={bgPattern} alt="background pattern" />
                 </menu>
             </nav>
         </header>
