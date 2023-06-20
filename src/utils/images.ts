@@ -7,6 +7,14 @@ import bgLeftDesktop from "../assets/left-desktop.svg"
 import bgRightMobile from "../assets/right-mobile.svg"
 import bgRightDesktop from "../assets/right-desktop.svg"
 
+import facebook from "../assets/facebook.svg"
+import twitter from "../assets/twitter.svg"
+import pinterest from "../assets/pinterest.svg"
+import instagram from "../assets/instagram.svg"
+
+import bgFooterMobile from "../assets/footer-mobile.svg"
+import bgFooterDesktop from "../assets/footer-desktop.svg"
+
 const bgHero = {
     heroMobile,
     heroDesktop
@@ -22,4 +30,16 @@ const bgPatternRight = {
     bgRightDesktop
 }
 
-export { bgHero, bgPatternLeft, bgPatternRight }
+const companiesFooter = [
+    facebook, 
+    twitter,
+    pinterest,
+    instagram
+]
+
+const bgFooter = {
+    bgFooterMobile,
+    bgFooterDesktop
+}
+
+export { bgHero, bgPatternLeft, bgPatternRight, companiesFooter, bgFooter }
