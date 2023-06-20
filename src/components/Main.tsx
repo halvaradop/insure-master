@@ -35,7 +35,7 @@ const Main = () => {
                     )}
                 </section>
             </section>
-            <section className="w-11/12 mx-auto py-20 px-4 text-center relative overflow-hidden bg-violet">
+            <section className="w-11/12 mx-auto mt-16 py-20 px-4 text-center relative overflow-hidden bg-violet">
                 <h2 className="mb-8 text-gray text-4xl font-bold font-display tracking-wider relative z-10">Find out more about how we work</h2>
                 <Button className="uppercase" text="How we work" color="gray" size="xs" />
                 <picture>
